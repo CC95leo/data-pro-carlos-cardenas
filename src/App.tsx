@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, BookOpen, Briefcase, FileText, Mail, User, Globe } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 type Language = 'en' | 'es';
 
@@ -15,7 +16,7 @@ const translations = {
     hero: {
       title: 'Carlos',
       lastName: 'Cardenas',
-      subtitle: 'Data Analyst & AI Researcher',
+      subtitle: 'Data Analyst & Business Intelligence',
       taglines: [
         "Data-Driven Insights",
         "Exploring AI Interactions",
@@ -99,7 +100,10 @@ const translations = {
         name: 'Name',
         email: 'Email',
         message: 'Message',
-        submit: 'Send Message'
+        submit: 'Send Message',
+        sending: 'Sending...',
+        success: 'Message sent successfully!',
+        error: 'Failed to send message. Please try again.'
       }
     },
     footer: {
@@ -116,7 +120,7 @@ const translations = {
     hero: {
       title: 'Carlos',
       lastName: 'Cárdenas',
-      subtitle: 'Analista de Datos e Investigador de IA',
+      subtitle: 'Analista de Datos e Inteligencia de Negocios',
       taglines: [
         "Insights Basados en Datos",
         "Explorando Interacciones de IA",
@@ -200,7 +204,10 @@ const translations = {
         name: 'Nombre',
         email: 'Correo Electrónico',
         message: 'Mensaje',
-        submit: 'Enviar Mensaje'
+        submit: 'Enviar Mensaje',
+        sending: 'Enviando...',
+        success: '¡Mensaje enviado con éxito!',
+        error: 'Error al enviar el mensaje. Por favor, inténtalo de nuevo.'
       }
     },
     footer: {
@@ -221,6 +228,44 @@ const sectionImages = [
 export default function App() {
   const [lang, setLang] = useState<Language>('en');
   const t = translations[lang];
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleContactSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!name || !email || !message) return;
+    
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      await emailjs.send(
+        'service_fdk8qag',
+        'template_cgqizew',
+        {
+          from_name: name,
+          from_email: email,
+          message: message,
+          subject: name
+        },
+        'da_Y8OcdntwYjkMvJ'
+      );
+      
+      setSubmitStatus('success');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   useEffect(() => {
     try {
@@ -425,15 +470,50 @@ export default function App() {
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.contact.title}</h2>
             <div className="max-w-xl">
               <p className="text-lg text-slate-600 mb-8 leading-[1.7]">{t.contact.p1}</p>
-              <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
+              <form className="flex flex-col gap-5" onSubmit={handleContactSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <input type="text" placeholder={t.contact.form.name} className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 shadow-sm" />
-                  <input type="email" placeholder={t.contact.form.email} className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 shadow-sm" />
+                  <input 
+                    type="text" 
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    placeholder={t.contact.form.name} 
+                    className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 shadow-sm" 
+                  />
+                  <input 
+                    type="email" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    placeholder={t.contact.form.email} 
+                    className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 shadow-sm" 
+                  />
                 </div>
-                <textarea placeholder={t.contact.form.message} rows={5} className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 resize-none shadow-sm"></textarea>
-                <button type="submit" className="mt-2 self-start px-9 py-4 bg-brand-blue text-white rounded-xl font-medium transition-all duration-200 shadow-[0_8px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_12px_28px_rgba(37,99,235,0.4)] hover:scale-[1.02] hover:brightness-110">
-                  {t.contact.form.submit}
+                <textarea 
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                  placeholder={t.contact.form.message} 
+                  rows={5} 
+                  className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 resize-none shadow-sm"
+                ></textarea>
+                <button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="mt-2 self-start px-9 py-4 bg-brand-blue text-white rounded-xl font-medium transition-all duration-200 shadow-[0_8px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_12px_28px_rgba(37,99,235,0.4)] hover:scale-[1.02] hover:brightness-110 disabled:opacity-70 disabled:cursor-not-allowed flex items-center gap-2"
+                >
+                  {isSubmitting ? t.contact.form.sending : t.contact.form.submit}
                 </button>
+                {submitStatus === 'success' && (
+                  <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-emerald-600 font-medium text-sm mt-2">
+                    {t.contact.form.success}
+                  </motion.p>
+                )}
+                {submitStatus === 'error' && (
+                  <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-red-600 font-medium text-sm mt-2">
+                    {t.contact.form.error}
+                  </motion.p>
+                )}
               </form>
             </div>
           </section>
