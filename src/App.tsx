@@ -223,16 +223,24 @@ export default function App() {
   const t = translations[lang];
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('app_language') as Language;
-    if (savedLang && (savedLang === 'en' || savedLang === 'es')) {
-      setLang(savedLang);
+    try {
+      const savedLang = localStorage.getItem('app_language') as Language;
+      if (savedLang && (savedLang === 'en' || savedLang === 'es')) {
+        setLang(savedLang);
+      }
+    } catch (e) {
+      console.warn('localStorage not available', e);
     }
   }, []);
 
   const toggleLanguage = () => {
     const newLang = lang === 'en' ? 'es' : 'en';
     setLang(newLang);
-    localStorage.setItem('app_language', newLang);
+    try {
+      localStorage.setItem('app_language', newLang);
+    } catch (e) {
+      console.warn('localStorage not available', e);
+    }
   };
 
   useEffect(() => {
