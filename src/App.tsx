@@ -295,7 +295,7 @@ export default function App() {
           <div className="relative w-48 h-48 md:w-64 md:h-64 shrink-0">
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-brand-indigo to-brand-purple blur-2xl opacity-40 animate-pulse" />
             <img 
-              src="https://storage.googleapis.com/carlos-cardenas-data-analyst/foto_carlos.JPG" 
+              src="https://storage.googleapis.com/carlos-cardenas-data-analyst/carlos_blanco.png" 
               alt="Portrait" 
               className="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl z-10"
               referrerPolicy="no-referrer"
