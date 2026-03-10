@@ -573,9 +573,8 @@ export default function App() {
       >
         <p>© {new Date().getFullYear()} Carlos Cardenas. {t.footer.rights}</p>
         <div className="flex gap-8">
-          <a href="#" className="hover:text-cyan-400 transition-colors duration-200">Twitter</a>
-          <a href="#" className="hover:text-cyan-400 transition-colors duration-200">LinkedIn</a>
-          <a href="#" className="hover:text-cyan-400 transition-colors duration-200">Dribbble</a>
+          <a href="https://www.linkedin.com/in/carlos-fernando-cardenas-montoya" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors duration-200">LinkedIn</a>
+          <a href="https://mavenshowcase.com/profile/c84123a0-a001-705d-d655-f94dce71964b" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors duration-200">Maven Analytics</a>
           <a href="#" className="hover:text-cyan-400 transition-colors duration-200">GitHub</a>
         </div>
       </motion.footer>
