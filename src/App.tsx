@@ -60,16 +60,19 @@ const translations = {
       title: 'Experience',
       items: [
         {
-          title: 'AI Analytics System',
-          description: 'A comprehensive analytics system built specifically for generative AI interfaces, focusing on transparency, user control, and seamless data integration.'
+          title: 'Data Strategy & Architecture',
+          meta: 'Tech Insights • 2024',
+          description: 'Developing scalable data architectures and strategic roadmaps for enterprise-level analytics transformation.'
         },
         {
-          title: 'Fintech Dashboard',
-          description: 'A complete redesign of a major financial platform\'s reporting, improving user engagement by 40% and simplifying complex data visualization for everyday users.'
+          title: 'Analyzing the AI Era',
+          meta: 'Data Collective • 2023',
+          description: 'An exploration of new analytical paradigms required when working with non-deterministic systems and generative models.'
         },
         {
-          title: 'Fintech Dashboard',
-          description: 'A complete redesign of a major financial platform\'s reporting, improving user engagement by 40% and simplifying complex data visualization for everyday users.'
+          title: 'The Future of Data Interfaces',
+          meta: 'Smashing Magazine • 2022',
+          description: 'How conversational UI and generative AI are reshaping the way we think about data-driven interactions and user flows.'
         }
       ]
     },
@@ -86,14 +89,28 @@ const translations = {
       title: 'Expertise & Skills',
       items: [
         {
-          title: 'Analyzing the AI Era',
-          meta: 'Data Collective • 2023',
-          description: 'An exploration of new analytical paradigms required when working with non-deterministic systems and generative models.'
+          title: 'AI Analytics System',
+          description: 'A comprehensive analytics system built specifically for generative AI interfaces, focusing on transparency, user control, and seamless data integration.'
         },
         {
-          title: 'The Future of Data Interfaces',
-          meta: 'Smashing Magazine • 2022',
-          description: 'How conversational UI and generative AI are reshaping the way we think about data-driven interactions and user flows.'
+          title: 'Fintech Dashboard',
+          description: 'A complete redesign of a major financial platform\'s reporting, improving user engagement by 40% and simplifying complex data visualization for everyday users.'
+        },
+        {
+          title: 'Fintech Dashboard',
+          description: 'A complete redesign of a major financial platform\'s reporting, improving user engagement by 40% and simplifying complex data visualization for everyday users.'
+        },
+        {
+          title: 'Placeholder Skill 1',
+          description: 'This is a placeholder description for the first new skill or expertise.'
+        },
+        {
+          title: 'Placeholder Skill 2',
+          description: 'This is a placeholder description for the second new skill or expertise.'
+        },
+        {
+          title: 'Placeholder Skill 3',
+          description: 'This is a placeholder description for the third new skill or expertise.'
         }
       ]
     },
@@ -165,15 +182,22 @@ const translations = {
       p2: 'Creo en la analítica como una herramienta para resolver problemas complejos, creando modelos intuitivos que empoderan a los tomadores de decisiones mientras se mantiene un alto estándar de excelencia estadística.'
     },
     work: {
-      title: 'Trabajo',
+      title: 'Experiencia',
       items: [
         {
-          title: 'Sistema de Analítica de IA',
-          description: 'Un sistema analítico integral construido específicamente para interfaces de IA generativa, centrado en la transparencia, el control del usuario y la integración fluida de datos.'
+          title: 'Estrategia y Arquitectura de Datos',
+          meta: 'Tech Insights • 2024',
+          description: 'Desarrollo de arquitecturas de datos escalables y hojas de ruta estratégicas para la transformación analítica a nivel empresarial.'
         },
         {
-          title: 'Dashboard Fintech',
-          description: 'Un rediseño completo de los reportes de una importante plataforma financiera, mejorando el engagement del usuario en un 40% y simplificando la visualización de datos complejos para usuarios cotidianos.'
+          title: 'Analizando la Era de la IA',
+          meta: 'Data Collective • 2023',
+          description: 'Una exploración de los nuevos paradigmas analíticos requeridos al trabajar con sistemas no deterministas y modelos generativos.'
+        },
+        {
+          title: 'El Futuro de las Interfaces de Datos',
+          meta: 'Smashing Magazine • 2022',
+          description: 'Cómo la interfaz de usuario conversacional y la IA generativa están remodelando la forma en que pensamos sobre las interacciones basadas en datos y los flujos de usuarios.'
         }
       ]
     },
@@ -187,17 +211,27 @@ const translations = {
       ]
     },
     publications: {
-      title: 'Publicaciones',
+      title: 'Experiencia y Habilidades',
       items: [
         {
-          title: 'Analizando la Era de la IA',
-          meta: 'Data Collective • 2023',
-          description: 'Una exploración de los nuevos paradigmas analíticos requeridos al trabajar con sistemas no deterministas y modelos generativos.'
+          title: 'Sistema de Analítica de IA',
+          description: 'Un sistema analítico integral construido específicamente para interfaces de IA generativa, centrado en la transparencia, el control del usuario y la integración fluida de datos.'
         },
         {
-          title: 'El Futuro de las Interfaces de Datos',
-          meta: 'Smashing Magazine • 2022',
-          description: 'Cómo la interfaz de usuario conversacional y la IA generativa están remodelando la forma en que pensamos sobre las interacciones basadas en datos y los flujos de usuarios.'
+          title: 'Dashboard Fintech',
+          description: 'Un rediseño completo de los reportes de una importante plataforma financiera, mejorando el engagement del usuario en un 40% y simplificando la visualización de datos complejos para usuarios cotidianos.'
+        },
+        {
+          title: 'Habilidad de Marcador 1',
+          description: 'Esta es una descripción de marcador de posición para la primera nueva habilidad o experiencia.'
+        },
+        {
+          title: 'Habilidad de Marcador 2',
+          description: 'Esta es una descripción de marcador de posición para la segunda nueva habilidad o experiencia.'
+        },
+        {
+          title: 'Habilidad de Marcador 3',
+          description: 'Esta es una descripción de marcador de posición para la tercera nueva habilidad o experiencia.'
         }
       ]
     },
@@ -318,15 +352,15 @@ export default function App() {
         <nav className="w-full flex justify-between items-center">
           <div className="font-display font-bold text-2xl tracking-tight text-brand-text">CC.</div>
           <div className="flex items-center gap-6 md:gap-8">
-            <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
-              <a href="#about" className="hover:text-brand-indigo transition-colors">{t.nav.resume}</a>
-              <a href="#education" className="hover:text-brand-indigo transition-colors">{t.nav.research}</a>
-              <a href="#experience" className="hover:text-brand-indigo transition-colors">{t.nav.projects}</a>
-              <a href="#contact" className="hover:text-brand-indigo transition-colors">{t.nav.contact}</a>
+            <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+              <a href="#about" className="hover:text-cyan-400 transition-colors">{t.nav.resume}</a>
+              <a href="#education" className="hover:text-cyan-400 transition-colors">{t.nav.research}</a>
+              <a href="#experience" className="hover:text-cyan-400 transition-colors">{t.nav.projects}</a>
+              <a href="#contact" className="hover:text-cyan-400 transition-colors">{t.nav.contact}</a>
             </div>
             <button 
               onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 hover:bg-slate-200 text-sm font-medium text-slate-700 transition-colors"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-sm font-medium text-slate-300 transition-colors"
             >
               <Globe className="w-4 h-4" />
               {lang.toUpperCase()}
@@ -342,11 +376,11 @@ export default function App() {
           className="flex flex-col md:flex-row items-center gap-10 md:gap-16"
         >
           <div className="relative w-48 h-48 md:w-64 md:h-64 shrink-0">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-brand-indigo to-brand-purple blur-2xl opacity-40 animate-pulse" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-500 blur-2xl opacity-40 animate-pulse" />
             <img 
               src="https://storage.googleapis.com/carlos-cardenas-data-analyst/carlos_blanco.png" 
               alt="Portrait" 
-              className="relative w-full h-full object-cover rounded-full border-4 border-white shadow-2xl z-10"
+              className="relative w-full h-full object-cover rounded-full border-4 border-slate-800 shadow-2xl z-10"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -355,7 +389,7 @@ export default function App() {
             <h1 className="font-display text-5xl md:text-7xl font-bold tracking-tight text-brand-text mb-2">
               {t.hero.title} <span className="text-gradient">{t.hero.lastName}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-500 font-light mb-6 max-w-xl leading-relaxed">
+            <p className="text-xl md:text-2xl text-slate-400 font-light mb-6 max-w-xl leading-relaxed">
               {t.hero.subtitle}
             </p>
             
@@ -363,9 +397,9 @@ export default function App() {
               {t.hero.taglines.map((tag, index) => (
                 <div 
                   key={index}
-                  className="relative group rounded-full p-[1px] bg-gradient-to-r from-brand-indigo/30 to-brand-purple/30 hover:shadow-[0_0_15px_rgba(79,70,229,0.2)] hover:scale-[1.02] transition-all duration-200"
+                  className="relative group rounded-full p-[1px] bg-gradient-to-r from-blue-600/30 to-cyan-500/30 hover:shadow-[0_0_15px_rgba(34,211,238,0.2)] hover:scale-[1.02] transition-all duration-200"
                 >
-                  <span className="block px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm text-sm font-medium text-slate-700">
+                  <span className="block px-3 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-sm text-sm font-medium text-slate-300">
                     {tag}
                   </span>
                 </div>
@@ -374,7 +408,7 @@ export default function App() {
             
             <a 
               href="#sections-grid"
-              className="group inline-flex items-center gap-2 px-9 py-3.5 bg-brand-blue text-white rounded-full font-medium transition-all duration-200 shadow-[0_8px_30px_rgb(37,99,235,0.3)] hover:shadow-[0_12px_36px_rgb(37,99,235,0.4)] hover:scale-[1.02] hover:brightness-110"
+              className="group inline-flex items-center gap-2 px-9 py-3.5 bg-blue-600 text-slate-50 rounded-full font-medium transition-all duration-200 shadow-[0_8px_30px_rgb(37,99,235,0.3)] hover:shadow-[0_12px_36px_rgb(37,99,235,0.4)] hover:scale-[1.02] hover:brightness-110"
             >
               {t.hero.cta}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -393,7 +427,7 @@ export default function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                className={`group relative block overflow-hidden rounded-3xl glass-card transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(79,70,229,0.1)] cursor-pointer ${
+                className={`group relative block overflow-hidden rounded-3xl glass-card transition-all duration-200 hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(34,211,238,0.1)] cursor-pointer ${
                   index === 0 ? 'md:col-span-2 lg:col-span-2' : ''
                 } ${index === 1 ? 'md:col-span-1 lg:col-span-1' : ''}`}
               >
@@ -406,15 +440,15 @@ export default function App() {
                 />
                 
                 <div className="relative z-20 h-full min-h-[300px] flex flex-col justify-end p-8 text-white">
-                  <div className="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6 border border-white/30">
+                  <div className="w-12 h-12 rounded-2xl bg-slate-800/50 backdrop-blur-md flex items-center justify-center mb-6 border border-slate-700">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="font-display text-2xl font-semibold mb-2">{section.title}</h3>
-                  <p className="text-white/80 font-light leading-relaxed max-w-md">
+                  <p className="text-slate-300 font-light leading-relaxed max-w-md">
                     {section.description}
                   </p>
                   
-                  <div className="absolute top-8 right-8 w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                  <div className="absolute top-8 right-8 w-10 h-10 rounded-full bg-slate-800/50 backdrop-blur-md flex items-center justify-center border border-slate-700 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                     <ArrowRight className="w-5 h-5" />
                   </div>
                 </div>
@@ -427,7 +461,7 @@ export default function App() {
         <div className="flex flex-col gap-16 md:gap-20 mt-8">
           <section id="about" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.about.title}</h2>
-            <div className="text-lg text-slate-600 leading-[1.7] max-w-3xl space-y-5">
+            <div className="text-lg text-slate-400 leading-[1.7] max-w-3xl space-y-5">
               <p>{t.about.p1}</p>
               <p>{t.about.p2}</p>
             </div>
@@ -435,11 +469,12 @@ export default function App() {
 
           <section id="experience" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.work.title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-6 max-w-3xl">
               {t.work.items.map((item, i) => (
-                <div key={i} className="p-8 rounded-3xl border border-white/60 bg-gradient-to-b from-white/60 to-white/30 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-200 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:scale-[1.02]">
-                  <h4 className="font-bold text-xl mb-3 text-brand-text tracking-tight">{item.title}</h4>
-                  <p className="text-slate-600 leading-[1.7]">{item.description}</p>
+                <div key={i} className="p-8 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/50 to-slate-900/30 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.5)] transition-all duration-200 hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)] hover:scale-[1.02]">
+                  <h4 className="font-bold text-xl mb-1 text-brand-text tracking-tight">{item.title}</h4>
+                  <p className="text-sm text-cyan-400 font-medium mb-3">{item.meta}</p>
+                  <p className="text-slate-400 leading-[1.7]">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -447,7 +482,7 @@ export default function App() {
 
           <section id="education" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.research.title}</h2>
-            <div className="text-lg text-slate-600 leading-[1.7] max-w-3xl">
+            <div className="text-lg text-slate-400 leading-[1.7] max-w-3xl">
               <p className="mb-6">{t.research.p1}</p>
               <ul className="list-disc pl-5 space-y-3">
                 {t.research.list.map((item, i) => (
@@ -459,12 +494,11 @@ export default function App() {
 
           <section id="expertise_skills" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.publications.title}</h2>
-            <div className="space-y-6 max-w-3xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {t.publications.items.map((item, i) => (
-                <div key={i} className="p-8 rounded-3xl border border-white/60 bg-gradient-to-b from-white/60 to-white/30 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-200 hover:shadow-[0_12px_40px_rgba(0,0,0,0.06)] hover:scale-[1.02]">
-                  <h4 className="font-bold text-xl mb-1 text-brand-text tracking-tight">{item.title}</h4>
-                  <p className="text-sm text-brand-indigo font-medium mb-3">{item.meta}</p>
-                  <p className="text-slate-600 leading-[1.7]">{item.description}</p>
+                <div key={i} className="p-8 rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/50 to-slate-900/30 backdrop-blur-sm shadow-[0_8px_30px_rgba(0,0,0,0.5)] transition-all duration-200 hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)] hover:scale-[1.02]">
+                  <h4 className="font-bold text-xl mb-3 text-brand-text tracking-tight">{item.title}</h4>
+                  <p className="text-slate-400 leading-[1.7]">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -473,7 +507,7 @@ export default function App() {
           <section id="contact" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.contact.title}</h2>
             <div className="max-w-xl">
-              <p className="text-lg text-slate-600 mb-8 leading-[1.7]">{t.contact.p1}</p>
+              <p className="text-lg text-slate-400 mb-8 leading-[1.7]">{t.contact.p1}</p>
               <form className="flex flex-col gap-5" onSubmit={handleContactSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <input 
@@ -482,7 +516,7 @@ export default function App() {
                     onChange={(e) => setName(e.target.value)}
                     required
                     placeholder={t.contact.form.name} 
-                    className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 shadow-sm" 
+                    className="w-full px-6 py-4 rounded-xl border border-slate-700 bg-slate-900 hover:bg-slate-800 focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 transition-all duration-200 shadow-sm" 
                   />
                   <input 
                     type="email" 
@@ -490,7 +524,7 @@ export default function App() {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     placeholder={t.contact.form.email} 
-                    className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 shadow-sm" 
+                    className="w-full px-6 py-4 rounded-xl border border-slate-700 bg-slate-900 hover:bg-slate-800 focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 transition-all duration-200 shadow-sm" 
                   />
                 </div>
                 <textarea 
@@ -499,12 +533,12 @@ export default function App() {
                   required
                   placeholder={t.contact.form.message} 
                   rows={5} 
-                  className="w-full px-6 py-4 rounded-xl border border-black/5 bg-white/50 hover:bg-white/80 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-indigo/20 transition-all duration-200 resize-none shadow-sm"
+                  className="w-full px-6 py-4 rounded-xl border border-slate-700 bg-slate-900 hover:bg-slate-800 focus:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 transition-all duration-200 resize-none shadow-sm"
                 ></textarea>
                 <button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="mt-2 self-start px-9 py-4 bg-brand-blue text-white rounded-xl font-medium transition-all duration-200 shadow-[0_8px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_12px_28px_rgba(37,99,235,0.4)] hover:scale-[1.02] hover:brightness-110 disabled:opacity-70 disabled:cursor-not-allowed flex items-center gap-2"
+                  className="mt-2 self-start px-9 py-4 bg-blue-600 text-slate-50 rounded-xl font-medium transition-all duration-200 shadow-[0_8px_20px_rgba(37,99,235,0.3)] hover:shadow-[0_12px_28px_rgba(37,99,235,0.4)] hover:scale-[1.02] hover:brightness-110 disabled:opacity-70 disabled:cursor-not-allowed flex items-center gap-2"
                 >
                   {isSubmitting ? t.contact.form.sending : t.contact.form.submit}
                 </button>
@@ -529,14 +563,14 @@ export default function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 1 }}
-        className="w-full max-w-5xl mt-20 pt-8 border-t border-brand-grey/50 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500/70"
+        className="w-full max-w-5xl mt-20 pt-8 border-t border-brand-grey/50 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400/70"
       >
         <p>© {new Date().getFullYear()} Carlos Cardenas. {t.footer.rights}</p>
         <div className="flex gap-8">
-          <a href="#" className="hover:text-brand-indigo transition-colors duration-200">Twitter</a>
-          <a href="#" className="hover:text-brand-indigo transition-colors duration-200">LinkedIn</a>
-          <a href="#" className="hover:text-brand-indigo transition-colors duration-200">Dribbble</a>
-          <a href="#" className="hover:text-brand-indigo transition-colors duration-200">GitHub</a>
+          <a href="#" className="hover:text-cyan-400 transition-colors duration-200">Twitter</a>
+          <a href="#" className="hover:text-cyan-400 transition-colors duration-200">LinkedIn</a>
+          <a href="#" className="hover:text-cyan-400 transition-colors duration-200">Dribbble</a>
+          <a href="#" className="hover:text-cyan-400 transition-colors duration-200">GitHub</a>
         </div>
       </motion.footer>
     </div>
