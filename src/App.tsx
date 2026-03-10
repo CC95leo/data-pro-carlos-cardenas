@@ -9,7 +9,7 @@ const translations = {
   en: {
     nav: {
       resume: 'Resume',
-      research: 'Research',
+      research: 'Education',
       projects: 'Experience',
       contact: 'Contact',
     },
@@ -60,63 +60,64 @@ const translations = {
       title: 'Experience',
       items: [
         {
-          title: 'Data Strategy & Architecture',
-          meta: 'Tech Insights • 2024',
-          description: 'Developing scalable data architectures and strategic roadmaps for enterprise-level analytics transformation.'
+          title: 'DHL GLOBAL FORWARDING (GSC)',
+          meta: 'Associate Control Tower | November 2024 - December 2025',
+          description: 'Focused on end-to-end monitoring and validation of maritime shipment data to ensure total integrity from origin to destination. Responsible for consolidating and verifying information across CargoWise and internal systems, while cleaning datasets to maintain high-quality standards. Expertly tracks logistics KPIs through Excel and Power BI, generating strategic operational reports to proactively identify process inconsistencies and mitigate delays.'
         },
         {
-          title: 'Analyzing the AI Era',
-          meta: 'Data Collective • 2023',
-          description: 'An exploration of new analytical paradigms required when working with non-deterministic systems and generative models.'
+          title: 'KASAN GLOBAL',
+          meta: 'Online Store Management (Dropshipping) | January 2024 - January 2025',
+          description: 'Optimizes Shopify digital catalogs and manages strategic product selection by analyzing market trends via Dropi. Responsible for data-driven inventory integration and refining product descriptions to align store content with real-time demand and operational requirements.'
         },
         {
-          title: 'The Future of Data Interfaces',
-          meta: 'Smashing Magazine • 2022',
-          description: 'How conversational UI and generative AI are reshaping the way we think about data-driven interactions and user flows.'
+          title: 'JAKE DOMICILIOS URBANOS',
+          meta: 'Marketing Assistant',
+          description: 'Monitors digital campaigns and commercial partnerships by analyzing performance metrics to identify content and segmentation optimization opportunities. Coordinates the delivery of digital assets across multiple channels, ensuring precise execution and strategic alignment with campaign objectives.'
         }
       ]
     },
     research: {
       title: 'Education',
-      p1: 'My research explores how users perceive and interact with data systems. I conduct qualitative and quantitative studies to understand trust, mental models, and the ethical implications of AI in everyday products.',
+      p1: 'Marketing and International Business professional transitioning into Big Data and Analytics, transforming complex information into actionable intelligence.',
       list: [
-        'Trust in Generative Models',
-        'Mental Models of Machine Learning',
-        'Ethical Data Patterns for AI'
+        'Universidad Compensar,  Postgraduate Specialization in Big Data -  “ In progress ”',
+        'Universidad de la Sabana , Diplomado Big Data & Business Analytics  Agu-Nov 2024',
+        'Australian Pacific College, Certificate IV in Marketing and Communication, Dec 2022 - NOV 2023, Australia, Brisbane',
+        'Universidad Sergio Arboleda, Bachelors Degree in Marketing and International Business 2017-2022'
       ]
     },
     publications: {
       title: 'Expertise & Skills',
       items: [
         {
-          title: 'AI Analytics System',
-          description: 'A comprehensive analytics system built specifically for generative AI interfaces, focusing on transparency, user control, and seamless data integration.'
+          title: 'Excel',
+          description: 'Advanced, including Power Query, Power Pivot, data modeling, dynamic dashboards, advanced formulas, and basic macro automation.'
         },
         {
-          title: 'Fintech Dashboard',
-          description: 'A complete redesign of a major financial platform\'s reporting, improving user engagement by 40% and simplifying complex data visualization for everyday users.'
+          title: 'Power BI',
+          description: 'Solid knowledge in report creation, data sourcing, transformation and cleaning, relationship modeling, DAX calculations, visual design, and Power BI Service for publishing and sharing dashboards.'
         },
         {
-          title: 'Fintech Dashboard',
-          description: 'A complete redesign of a major financial platform\'s reporting, improving user engagement by 40% and simplifying complex data visualization for everyday users.'
+          title: 'SQL',
+          description: 'Solid SQL skills for querying, cleaning, transforming, and analyzing data across relational databases, with experience in joins, aggregations, subqueries.'
         },
         {
-          title: 'Placeholder Skill 1',
-          description: 'This is a placeholder description for the first new skill or expertise.'
+          title: 'Python',
+          description: 'Practical experience with Python for data analysis, using libraries such as Pandas, NumPy, and Matplotlib, along with a clear understanding of mutability, environments, and Jupyter workflows'
         },
         {
-          title: 'Placeholder Skill 2',
-          description: 'This is a placeholder description for the second new skill or expertise.'
+          title: 'AI Tools',
+          description: 'I regularly leverage AI tools such as Gemini and Copilot to support content creation, idea generation, problem‑solving, and productivity across both Microsoft and Google ecosystems. For research and reliable sources, I use Perplexity, and for creating personalized avatars, I work with HeyGen.'
         },
         {
-          title: 'Placeholder Skill 3',
-          description: 'This is a placeholder description for the third new skill or expertise.'
+          title: 'Cloud & Storage Basics',
+          description: 'Working knowledge of cloud environments such as Google Cloud, Azure, and AWS for storage, hosting, and data access workflows.'
         }
       ]
     },
     contact: {
       title: 'Contact',
-      p1: 'I\'m always open to discussing data analytics work or partnership opportunities. Feel free to reach out.',
+      p1: 'I’m open to new opportunities in data analytics. Feel free to contact me',
       form: {
         name: 'Name',
         email: 'Email',
@@ -134,7 +135,7 @@ const translations = {
   es: {
     nav: {
       resume: 'Currículum',
-      research: 'Investigación',
+      research: 'Educación',
       projects: 'Experiencia',
       contact: 'Contacto',
     },
@@ -144,100 +145,105 @@ const translations = {
       subtitle: 'Analista de Datos e Inteligencia de Negocios',
       taglines: [
         "Insights Basados en Datos",
-        "Explorando Interacciones de IA",
-        "Construyendo el Futuro"
+        "Storytelling Estratégico",
+        "Eficiencia Automatizada"
       ],
-      cta: 'Ver mi Trabajo'
+      cta: 'Explora mi Trayectoria Profesional'
     },
     sections: [
       {
         id: 'about',
         title: 'Sobre mí',
-        description: 'Descubre mi trayectoria, filosofía y los valores fundamentales que impulsan mi trabajo.',
+        description: 'Una visión general de mi mentalidad analítica y valores fundamentales.',
       },
       {
-        id: 'work',
-        title: 'Trabajo',
-        description: 'Una selección curada de mis proyectos y casos de estudio más impactantes.',
+        id: 'experience',
+        title: 'Experiencia',
+        description: 'Una línea de tiempo profesional de mis roles y crecimiento profesional.',
       },
       {
-        id: 'research',
-        title: 'Investigación',
-        description: 'Análisis profundos sobre tecnologías emergentes, interacciones de IA y comportamiento de datos.',
+        id: 'education',
+        title: 'Educación',
+        description: 'Mi base académica, certificaciones y compromiso con el aprendizaje continuo.',
       },
       {
-        id: 'publications',
-        title: 'Publicaciones',
-        description: 'Artículos, ensayos y liderazgo de opinión publicados en la web.',
+        id: 'expertise_skills',
+        title: 'Experiencia y Habilidades',
+        description: 'Un vistazo rápido a mis herramientas técnicas y experiencia principal.',
       },
       {
         id: 'contact',
         title: 'Contacto',
-        description: 'Ponte en contacto para colaboraciones, conferencias o simplemente para saludar.',
+        description: 'Conectemos. Abierto a nuevas oportunidades y proyectos de datos.',
       }
     ],
     about: {
       title: 'Sobre mí',
-      p1: 'Soy un Analista de Datos e Investigador de IA con más de una década de experiencia en la creación de soluciones basadas en datos que combinan el rigor analítico con insights accionables. Mi trabajo se centra en la intersección de la ciencia de datos, la interacción humano-computadora y la inteligencia artificial.',
-      p2: 'Creo en la analítica como una herramienta para resolver problemas complejos, creando modelos intuitivos que empoderan a los tomadores de decisiones mientras se mantiene un alto estándar de excelencia estadística.'
+      p1: 'Analista de Datos dedicado a transformar datos en storytelling estratégico y eficiencia automatizada. Mi enfoque está en descubrir patrones ocultos que impulsan decisiones comerciales más inteligentes y rápidas.',
+      p2: 'Creo en el poder de los insights basados en datos para resolver problemas complejos, creando soluciones escalables que cierran la brecha entre el análisis técnico y la acción ejecutiva.'
     },
     work: {
       title: 'Experiencia',
       items: [
         {
-          title: 'Estrategia y Arquitectura de Datos',
-          meta: 'Tech Insights • 2024',
-          description: 'Desarrollo de arquitecturas de datos escalables y hojas de ruta estratégicas para la transformación analítica a nivel empresarial.'
+          title: 'DHL GLOBAL FORWARDING (GSC)',
+          meta: 'Associate Control Tower | Noviembre 2024 - Diciembre 2025',
+          description: 'Enfocado en el monitoreo y validación de extremo a extremo de datos de envíos marítimos para garantizar la integridad total desde el origen hasta el destino. Responsable de consolidar y verificar información a través de CargoWise y sistemas internos, mientras se limpian conjuntos de datos para mantener altos estándares de calidad. Realiza un seguimiento experto de los KPI logísticos a través de Excel y Power BI, generando informes operativos estratégicos para identificar proactivamente inconsistencias en los procesos y mitigar retrasos.'
         },
         {
-          title: 'Analizando la Era de la IA',
-          meta: 'Data Collective • 2023',
-          description: 'Una exploración de los nuevos paradigmas analíticos requeridos al trabajar con sistemas no deterministas y modelos generativos.'
+          title: 'KASAN GLOBAL',
+          meta: 'Gestión de Tienda Online (Dropshipping) | Enero 2024 - Enero 2025',
+          description: 'Optimiza catálogos digitales de Shopify y gestiona la selección estratégica de productos mediante el análisis de tendencias del mercado a través de Dropi. Responsable de la integración de inventario basada en datos y de refinar las descripciones de productos para alinear el contenido de la tienda con la demanda en tiempo real y los requisitos operativos.'
         },
         {
-          title: 'El Futuro de las Interfaces de Datos',
-          meta: 'Smashing Magazine • 2022',
-          description: 'Cómo la interfaz de usuario conversacional y la IA generativa están remodelando la forma en que pensamos sobre las interacciones basadas en datos y los flujos de usuarios.'
+          title: 'JAKE DOMICILIOS URBANOS',
+          meta: 'Asistente de Marketing',
+          description: 'Monitorea campañas digitales y asociaciones comerciales mediante el análisis de métricas de rendimiento para identificar oportunidades de optimización de contenido y segmentación. Coordina la entrega de activos digitales a través de múltiples canales, asegurando una ejecución precisa y una alineación estratégica con los objetivos de la campaña.'
         }
       ]
     },
     research: {
-      title: 'Investigación',
-      p1: 'Mi investigación explora cómo los usuarios perciben e interactúan con los sistemas de datos. Realizo estudios cualitativos y cuantitativos para comprender la confianza, los modelos mentales y las implicaciones éticas de la IA en los productos cotidianos.',
+      title: 'Educación',
+      p1: 'Profesional en Marketing y Negocios Internacionales en transición hacia Big Data y Analítica, transformando información compleja en inteligencia accionable.',
       list: [
-        'Confianza en Modelos Generativos',
-        'Modelos Mentales de Machine Learning',
-        'Patrones Éticos de Datos para IA'
+        'Universidad Compensar, Especialización en Big Data - "En curso"',
+        'Universidad de la Sabana, Diplomado en Big Data & Business Analytics, Ago-Nov 2024',
+        'Australian Pacific College, Certificado IV en Marketing y Comunicación, Dic 2022 - Nov 2023, Australia, Brisbane',
+        'Universidad Sergio Arboleda, Profesional en Marketing y Negocios Internacionales 2017-2022'
       ]
     },
     publications: {
       title: 'Experiencia y Habilidades',
       items: [
         {
-          title: 'Sistema de Analítica de IA',
-          description: 'Un sistema analítico integral construido específicamente para interfaces de IA generativa, centrado en la transparencia, el control del usuario y la integración fluida de datos.'
+          title: 'Excel',
+          description: 'Avanzado, incluyendo Power Query, Power Pivot, modelado de datos, tableros dinámicos, fórmulas avanzadas y automatización básica con macros.'
         },
         {
-          title: 'Dashboard Fintech',
-          description: 'Un rediseño completo de los reportes de una importante plataforma financiera, mejorando el engagement del usuario en un 40% y simplificando la visualización de datos complejos para usuarios cotidianos.'
+          title: 'Power BI',
+          description: 'Conocimiento sólido en la creación de informes, obtención de datos, transformación y limpieza, modelado de relaciones, cálculos DAX, diseño visual y Power BI Service para publicar y compartir tableros.'
         },
         {
-          title: 'Habilidad de Marcador 1',
-          description: 'Esta es una descripción de marcador de posición para la primera nueva habilidad o experiencia.'
+          title: 'SQL',
+          description: 'Sólidas habilidades en SQL para consultar, limpiar, transformar y analizar datos en bases de datos relacionales, con experiencia en joins, agregaciones y subconsultas.'
         },
         {
-          title: 'Habilidad de Marcador 2',
-          description: 'Esta es una descripción de marcador de posición para la segunda nueva habilidad o experiencia.'
+          title: 'Python',
+          description: 'Experiencia práctica con Python para análisis de datos, utilizando bibliotecas como Pandas, NumPy y Matplotlib, junto con una clara comprensión de la mutabilidad, entornos y flujos de trabajo de Jupyter.'
         },
         {
-          title: 'Habilidad de Marcador 3',
-          description: 'Esta es una descripción de marcador de posición para la tercera nueva habilidad o experiencia.'
+          title: 'Herramientas de IA',
+          description: 'Aprovecho regularmente herramientas de IA como Gemini y Copilot para apoyar la creación de contenido, generación de ideas, resolución de problemas y productividad en los ecosistemas de Microsoft y Google. Para investigación y fuentes confiables utilizo Perplexity, y para crear avatares personalizados trabajo con HeyGen.'
+        },
+        {
+          title: 'Conceptos Básicos de Nube y Almacenamiento',
+          description: 'Conocimiento práctico de entornos en la nube como Google Cloud, Azure y AWS para flujos de trabajo de almacenamiento, alojamiento y acceso a datos.'
         }
       ]
     },
     contact: {
       title: 'Contacto',
-      p1: 'Siempre estoy abierto a discutir trabajos de análisis de datos u oportunidades de asociación. No dudes en contactarme.',
+      p1: 'Estoy abierto a nuevas oportunidades en análisis de datos. No dudes en contactarme.',
       form: {
         name: 'Nombre',
         email: 'Correo Electrónico',
@@ -258,8 +264,8 @@ const sectionIcons = [User, Briefcase, BookOpen, FileText, Mail];
 const sectionImages = [
   'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=800&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=800&auto=format&fit=crop',
   'https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=800&auto=format&fit=crop'
 ];
 
