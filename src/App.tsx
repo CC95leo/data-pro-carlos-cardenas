@@ -10,7 +10,7 @@ const translations = {
     nav: {
       resume: 'Resume',
       research: 'Research',
-      projects: 'Projects',
+      projects: 'Experience',
       contact: 'Contact',
     },
     hero: {
@@ -19,45 +19,45 @@ const translations = {
       subtitle: 'Data Analyst & Business Intelligence',
       taglines: [
         "Data-Driven Insights",
-        "Exploring AI Interactions",
-        "Building the Future"
+        "Strategic Storytelling",
+        "Automated Efficiency"
       ],
-      cta: 'View My Work'
+      cta: 'Explore my Professional Journey'
     },
     sections: [
       {
         id: 'about',
         title: 'About',
-        description: 'Discover my journey, philosophy, and the core values that drive my work.',
+        description: 'An overview of my analytical mindset and core values.',
       },
       {
-        id: 'work',
-        title: 'Work',
-        description: 'A curated selection of my most impactful projects and case studies.',
+        id: 'experience',
+        title: 'Experience',
+        description: 'A professional timeline of my roles and career growth.',
       },
       {
-        id: 'research',
-        title: 'Research',
-        description: 'Deep dives into emerging technologies, AI interactions, and data behavior.',
+        id: 'education',
+        title: 'Education',
+        description: 'My academic foundation, certifications and commitment to continuous learning.',
       },
       {
-        id: 'publications',
-        title: 'Publications',
-        description: 'Articles, papers, and thought leadership published across the web.',
+        id: 'expertise_skills',
+        title: 'Expertise & Skills',
+        description: 'A quick look at my technical tools and core expertise.',
       },
       {
         id: 'contact',
         title: 'Contact',
-        description: 'Get in touch for collaborations, speaking engagements, or just to say hi.',
+        description: 'Let´s connect. Open to new opportunities and data projects',
       }
     ],
     about: {
       title: 'About',
-      p1: 'I am a Data Analyst and AI Researcher with over a decade of experience in crafting data-driven solutions that blend analytical rigor with actionable insights. My work focuses on the intersection of data science, human-computer interaction, and artificial intelligence.',
-      p2: 'I believe in analytics as a tool for solving complex problems, creating intuitive models that empower decision-makers while maintaining a high standard of statistical excellence.'
+      p1: 'Data Analyst dedicated to transforming raw data into strategic storytelling and automated efficiency. My focus is on uncovering hidden patterns that drive smarter, faster business decisions.',
+      p2: 'I believe in the power of data-driven insights to solve complex problems, creating scalable solutions that bridge the gap between technical analysis and executive action.'
     },
     work: {
-      title: 'Work',
+      title: 'Experience',
       items: [
         {
           title: 'AI Analytics System',
@@ -66,11 +66,15 @@ const translations = {
         {
           title: 'Fintech Dashboard',
           description: 'A complete redesign of a major financial platform\'s reporting, improving user engagement by 40% and simplifying complex data visualization for everyday users.'
+        },
+        {
+          title: 'Fintech Dashboard',
+          description: 'A complete redesign of a major financial platform\'s reporting, improving user engagement by 40% and simplifying complex data visualization for everyday users.'
         }
       ]
     },
     research: {
-      title: 'Research',
+      title: 'Education',
       p1: 'My research explores how users perceive and interact with data systems. I conduct qualitative and quantitative studies to understand trust, mental models, and the ethical implications of AI in everyday products.',
       list: [
         'Trust in Generative Models',
@@ -79,7 +83,7 @@ const translations = {
       ]
     },
     publications: {
-      title: 'Publications',
+      title: 'Expertise & Skills',
       items: [
         {
           title: 'Analyzing the AI Era',
@@ -114,7 +118,7 @@ const translations = {
     nav: {
       resume: 'Currículum',
       research: 'Investigación',
-      projects: 'Proyectos',
+      projects: 'Experiencia',
       contact: 'Contacto',
     },
     hero: {
@@ -316,8 +320,8 @@ export default function App() {
           <div className="flex items-center gap-6 md:gap-8">
             <div className="hidden md:flex gap-8 text-sm font-medium text-slate-600">
               <a href="#about" className="hover:text-brand-indigo transition-colors">{t.nav.resume}</a>
-              <a href="#research" className="hover:text-brand-indigo transition-colors">{t.nav.research}</a>
-              <a href="#work" className="hover:text-brand-indigo transition-colors">{t.nav.projects}</a>
+              <a href="#education" className="hover:text-brand-indigo transition-colors">{t.nav.research}</a>
+              <a href="#experience" className="hover:text-brand-indigo transition-colors">{t.nav.projects}</a>
               <a href="#contact" className="hover:text-brand-indigo transition-colors">{t.nav.contact}</a>
             </div>
             <button 
@@ -429,7 +433,7 @@ export default function App() {
             </div>
           </section>
 
-          <section id="work" className="scroll-mt-24">
+          <section id="experience" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.work.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {t.work.items.map((item, i) => (
@@ -441,7 +445,7 @@ export default function App() {
             </div>
           </section>
 
-          <section id="research" className="scroll-mt-24">
+          <section id="education" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.research.title}</h2>
             <div className="text-lg text-slate-600 leading-[1.7] max-w-3xl">
               <p className="mb-6">{t.research.p1}</p>
@@ -453,7 +457,7 @@ export default function App() {
             </div>
           </section>
 
-          <section id="publications" className="scroll-mt-24">
+          <section id="expertise_skills" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.publications.title}</h2>
             <div className="space-y-6 max-w-3xl">
               {t.publications.items.map((item, i) => (
