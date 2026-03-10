@@ -134,7 +134,7 @@ const translations = {
   },
   es: {
     nav: {
-      resume: 'Currículum',
+      resume: 'Perfil',
       research: 'Educación',
       projects: 'Experiencia',
       contact: 'Contacto',
