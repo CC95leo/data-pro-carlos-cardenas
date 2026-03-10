@@ -360,8 +360,8 @@ export default function App() {
           <div className="flex items-center gap-6 md:gap-8">
             <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
               <a href="#about" className="hover:text-cyan-400 transition-colors">{t.nav.resume}</a>
-              <a href="#education" className="hover:text-cyan-400 transition-colors">{t.nav.research}</a>
               <a href="#experience" className="hover:text-cyan-400 transition-colors">{t.nav.projects}</a>
+              <a href="#education" className="hover:text-cyan-400 transition-colors">{t.nav.research}</a>
               <a href="#contact" className="hover:text-cyan-400 transition-colors">{t.nav.contact}</a>
             </div>
             <button 
@@ -486,18 +486,6 @@ export default function App() {
             </div>
           </section>
 
-          <section id="education" className="scroll-mt-24">
-            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.research.title}</h2>
-            <div className="text-lg text-slate-400 leading-[1.7] max-w-3xl">
-              <p className="mb-6">{t.research.p1}</p>
-              <ul className="list-disc pl-5 space-y-3">
-                {t.research.list.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </section>
-
           <section id="expertise_skills" className="scroll-mt-24">
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.publications.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -507,6 +495,18 @@ export default function App() {
                   <p className="text-slate-400 leading-[1.7]">{item.description}</p>
                 </div>
               ))}
+            </div>
+          </section>
+
+          <section id="education" className="scroll-mt-24">
+            <h2 className="font-display text-4xl md:text-5xl font-bold mb-6 text-brand-text tracking-tight">{t.research.title}</h2>
+            <div className="text-lg text-slate-400 leading-[1.7] max-w-3xl">
+              <p className="mb-6">{t.research.p1}</p>
+              <ul className="list-disc pl-5 space-y-3">
+                {t.research.list.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
             </div>
           </section>
 
