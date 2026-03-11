@@ -168,8 +168,8 @@ const translations = {
       },
       {
         id: 'expertise_skills',
-        title: 'Experiencia y Habilidades',
-        description: 'Un vistazo rápido a mis herramientas técnicas y experiencia principal.',
+        title: 'Habilidades',
+        description: 'Un vistazo rápido a mis habilidades técnicas y experiencia principal.',
       },
       {
         id: 'contact',
@@ -179,7 +179,7 @@ const translations = {
     ],
     about: {
       title: 'Sobre mí',
-      p1: 'Analista de Datos dedicado a transformar datos en storytelling estratégico y eficiencia automatizada. Mi enfoque está en descubrir patrones ocultos que impulsan decisiones comerciales más inteligentes y rápidas.',
+      p1: 'Analista de Datos dedicado a transformar datos en storytelling estratégico y eficiencia automatizada. Mi enfoque está en descubrir patrones ocultos que impulsan decisiones más inteligentes y rápidas.',
       p2: 'Creo en el poder de los insights basados en datos para resolver problemas complejos, creando soluciones escalables que cierran la brecha entre el análisis técnico y la acción ejecutiva.'
     },
     work: {
@@ -188,17 +188,17 @@ const translations = {
         {
           title: 'DHL GLOBAL FORWARDING (GSC)',
           meta: 'Associate Control Tower | Noviembre 2024 - Diciembre 2025',
-          description: 'Enfocado en el monitoreo y validación de extremo a extremo de datos de envíos marítimos para garantizar la integridad total desde el origen hasta el destino. Responsable de consolidar y verificar información a través de CargoWise y sistemas internos, mientras se limpian conjuntos de datos para mantener altos estándares de calidad. Realiza un seguimiento experto de los KPI logísticos a través de Excel y Power BI, generando informes operativos estratégicos para identificar proactivamente inconsistencias en los procesos y mitigar retrasos.'
+          description: 'Enfocado en el monitoreo y validación de envíos marítimos para garantizar la integridad total desde el origen hasta el destino. Responsable de consolidar y verificar información a través de CargoWise y sistemas internos, limpiando conjuntos de datos para mantener altos estándares de calidad. Realice seguimiento de KPIs logísticos a través de Excel y Power BI, generando informes operativos estratégicos para identificar proactivamente inconsistencias en los procesos y mitigar retrasos.'
         },
         {
           title: 'KASAN GLOBAL',
           meta: 'Gestión de Tienda Online (Dropshipping) | Enero 2024 - Enero 2025',
-          description: 'Optimiza catálogos digitales de Shopify y gestiona la selección estratégica de productos mediante el análisis de tendencias del mercado a través de Dropi. Responsable de la integración de inventario basada en datos y de refinar las descripciones de productos para alinear el contenido de la tienda con la demanda en tiempo real y los requisitos operativos.'
+          description: 'Optimice catálogos digitales de Shopify y gestione la selección estratégica de productos mediante el análisis de tendencias del mercado a través de Dropi. Responsable de la integración de inventario basada en datos y de realizar las descripciones de productos para alinear el contenido de la tienda con la demanda en tiempo real y los requisitos operativos.'
         },
         {
           title: 'JAKE DOMICILIOS URBANOS',
           meta: 'Asistente de Marketing',
-          description: 'Monitorea campañas digitales y asociaciones comerciales mediante el análisis de métricas de rendimiento para identificar oportunidades de optimización de contenido y segmentación. Coordina la entrega de activos digitales a través de múltiples canales, asegurando una ejecución precisa y una alineación estratégica con los objetivos de la campaña.'
+          description: 'Monitorear campañas digitales y asociaciones comerciales mediante el análisis de métricas de rendimiento para identificar oportunidades de optimización de contenido y segmentación. Además verificar la entrega de activos digitales a través de diferentes canales, asegurando una ejecución precisa y una alineación estratégica con los objetivos de la campaña.'
         }
       ]
     },
@@ -213,7 +213,7 @@ const translations = {
       ]
     },
     publications: {
-      title: 'Experiencia y Habilidades',
+      title: 'Habilidades Técnicas',
       items: [
         {
           title: 'Excel',
